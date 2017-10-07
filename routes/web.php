@@ -11,12 +11,16 @@
 |
 */
 
-Route::get('/goods', function () {
-    return view('goods.index');
-});
 
-Route::get('/', function () {
-    return view('index');
-});
+## 主页
+Route::get('/', '\App\Http\Controllers\RouteController@RouteIndex');
+
+# 商品页面
+Route::get('/goods', '\App\Http\Controllers\RouteController@RouteGoods');
+
+# 入库页面
+Route::get('/storage', '\App\Http\Controllers\RouteController@RouteStorage');
+# 出库页面
+Route::get('/outstorage', '\App\Http\Controllers\RouteController@RouteOutStorage');
 
 

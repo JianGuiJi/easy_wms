@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', '商品管理')
+@section('title', '出库')
 
 
 @section('content')
@@ -8,15 +8,15 @@
     <div data-role="page" id="home">
         <div data-role="header">
             @include('layouts.topbar')
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="/" data-icon="home" data-transition="fade">主页</a></li>
-                    <li><a href="#tbl_goods" data-icon="shop" data-transition="slidedown">列表</a></li>
-                    <li><a href="#page3" data-icon="arrow-d-r" data-transition="flow">入库</a></li>
-                    <li><a href="#pagetwo" data-icon="arrow-u-r" data-transition="slidefade">出库</a></li>
-                    <li><a href="#pagetwo" data-icon="search" >搜索</a></li>
-                </ul>
-            </div>
+            {{--<div data-role="navbar">--}}
+                {{--<ul>--}}
+                    {{--<li><a href="/" data-icon="home" data-transition="fade">主页</a></li>--}}
+                    {{--<li><a href="#tbl_goods" data-icon="shop" data-transition="slidedown">列表</a></li>--}}
+                    {{--<li><a href="#page3" data-icon="arrow-d-r" data-transition="flow">入库</a></li>--}}
+                    {{--<li><a href="#pagetwo" data-icon="arrow-u-r" data-transition="slidefade">出库</a></li>--}}
+                    {{--<li><a href="#pagetwo" data-icon="search" >搜索</a></li>--}}
+                {{--</ul>--}}
+            {{--</div>--}}
         </div>
 
 
@@ -133,6 +133,6 @@
                 </tbody>
             </table>
         </div>
-        
+        <div data-role="footer"></div>
     </div>
 @endsection
