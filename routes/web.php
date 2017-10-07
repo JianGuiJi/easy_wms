@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/goods', function () {
+    return view('goods.index');
 });
+
+Route::get('/', function () {
+    return view('index');
+});
+
+
